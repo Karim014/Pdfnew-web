@@ -1,0 +1,8 @@
+{
+  "name": "StudyFlow AI Platform",
+  "description": "An all-in-one PDF toolkit and AI-powered study assistant for students. Features include Merge, Split, Compress, OCR, and an AI Studio for document analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

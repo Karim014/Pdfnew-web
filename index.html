@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyFlow - AI Powered Student Toolkit</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2b8cee",
+            "primary-hover": "#1a7bd9",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "surface-dark": "#1b252f",
+            "surface-hover": "#23303d",
+            "border-dark": "#2a3b4c",
+            "text-secondary": "#92adc9"
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"],
+            "sans": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #101922; }
+    ::-webkit-scrollbar-thumb { background: #233648; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #2b8cee; }
+    .glass-nav { background: rgba(16, 25, 34, 0.7); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .tool-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px -5px rgba(43, 140, 238, 0.1); }
+    
+    .prose { color: #cbd5e1; }
+    .prose h1, .prose h2, .prose h3 { color: #fff; }
+    .prose strong { color: #fff; }
+    .prose code { background: #1e293b; color: #38bdf8; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-family: monospace; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "marked": "https://esm.sh/marked@12.0.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.11.11",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-white antialiased">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
